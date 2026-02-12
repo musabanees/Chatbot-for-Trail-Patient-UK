@@ -1,0 +1,106 @@
+
+### **1. Table: Studies (The "Master" Table)**
+
+This table holds the core information about each clinical trial. One row per study.
+
+* 
+**`nct_id` (Primary Key):** The unique ID from the API (e.g., `NCT12345678`).
+
+
+* 
+**`brief_title`:** The short name of the study.
+
+
+* 
+**`official_title`:** The full scientific name.
+
+
+* 
+**`overall_status`:** Current status (e.g., "Recruiting", "Completed").
+
+
+* 
+**`phase`:** The phase of the trial (e.g., "Phase 3").
+
+
+* 
+**`conditions`:** The disease or condition being studied (e.g., "Diabetes").
+
+
+* 
+**`study_type`:** The type of study (e.g., "Interventional").
+
+
+* 
+**`brief_summary`:** A short text description of the study.
+
+
+* 
+**`eligibility_criteria`:** The full text listing inclusion and exclusion criteria.
+
+
+* 
+**`last_update_date`:** The date the record was last updated.
+
+
+* **`embedding`:** This is where you store the vector representation (see the "Embedding Strategy" section below).
+
+### **2. Table: Locations (The "Map" Table)**
+
+This table handles the geospatial data. Since one study can have multiple locations, you will have multiple rows here pointing back to a single `nct_id`.
+
+* **`id` (Primary Key):** A unique ID for this specific location entry.
+* 
+**`nct_id` (Foreign Key):** Links back to the `Studies` table.
+
+
+* 
+**`facility`:** The name of the hospital or clinic.
+
+
+* 
+**`city`:** The city name.
+
+
+* 
+**`country`:** The country name (filter for "United Kingdom" before saving).
+
+
+* 
+**`latitude`:** The latitude coordinate from `geoPoint.lat`.
+
+
+* 
+**`longitude`:** The longitude coordinate from `geoPoint.lon`.
+
+
+
+### **3. Table: Interventions (The "Details" Table)**
+
+This table stores the drugs or treatments being tested. Like locations, one study can have multiple interventions.
+
+* **`id` (Primary Key):** A unique ID for this intervention entry.
+* 
+**`nct_id` (Foreign Key):** Links back to the `Studies` table.
+
+
+* 
+**`type`:** The type of intervention (e.g., "Drug", "Device").
+
+
+* 
+**`name`:** The specific name (e.g., "Metformin").
+
+
+* 
+**`description`:** Details about dosage or administration (e.g., "10mg tablet").
+
+
+
+### **The Embedding Strategy: Combined vs. Separate?**
+
+Create a single text chunk that looks like this:
+`"Title: [brief_title]. Condition: [conditions]. Summary: [brief_summary]. Criteria: [eligibility_criteria]."`
+* **Where to save:**
+Store this single vector in the `embedding` column of the **Studies** table.
+

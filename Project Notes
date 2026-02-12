@@ -1,0 +1,43 @@
+
+
+Project flow
+
+1. Figure out APIs which one I should take or neglect. ✅
+2. Database which one to use. ✅
+3. How to structure the data in the database.
+4. Overall structure for the RAG
+
+
+
+What thing to search:
+1. how we sotre the structured data in the RAG and how we search with vector DB
+2. If I dockerised vectorDB can I pushed that into the huggingface.
+
+
+
+
+Step by Step
+DATA GATHERING AND SAVING LOGIC
+1. I will check which data columns I need to take. Which is one relevant for any kind of searches. ✅
+2. Which data I need to save where, because I have the structured data and the other vector based data. ✅
+3. What tables need to make like what will be the relation between them.
+
+
+RAG RETRIVAL PART
+1. Logic to define how to fetch the records
+
+-----------------------------
+
+EMBEDDINGS:
+
+- You should create multiple embeddings, not one
+
+| Object type          | Embedded text                | Why                      |
+| -------------------- | ---------------------------- | ------------------------ |
+| Trial summary        | briefSummary                 | High-level meaning       |
+| Eligibility          | eligibilityCriteria          | Patient matching         |
+| Conditions           | conditions                   | Disease-based search     |
+| Metadata description | title + patient_count + meds | Filtering + context      |
+| Location (optional)  | location text                | Only if location matters |
+
+- Do the indexing of the major columns and you use index/key info by giving a small, curated summary to the LLM as context, but only when the user’s question needs SQL over that schema. You’re using index metadata to help the LLM generate correct, efficient SQL (right joins, right filters).

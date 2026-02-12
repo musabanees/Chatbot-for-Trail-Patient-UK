@@ -1,0 +1,39 @@
+I have this idea that I need to build, please read this and tell me is this idea good for the RAG system?
+
+I was recently learning the RAG and now I need to build the project to brush the skills. I have shared the idea below that I need to develop.
+
+Idea:
+The Project Architecture: "The UK Trial Scout"
+To impress a recruiter, you shouldn't just build a "search bar." You should build a Decision Support Tool.
+
+The "Recruiter Wow-Factor" Features:
+Geospatial RAG: In the UK, travel distance is a huge factor for patients. Your RAG should not only find a trial for "Breast Cancer" but also rank them by distance from the user’s postcode.
+
+Eligibility "Red-Flag" Detector: Use the LLM to read the "Inclusion/Exclusion" criteria and immediately highlight reasons a patient might not qualify (e.g., "Exclude if on blood thinners").
+
+Multi-Hop Reasoning (The Star Feature):
+
+User Query: "Find me Phase III trials for Type 2 Diabetes in the North West that don't require daily injections."
+
+The "Multi-Hop": Your RAG must (1) Find Diabetes trials, (2) Filter for Phase III, (3) Filter for UK/North West locations, and (4) Read the drug delivery method in the trial description.
+
+
+For now, I am targeting only the UK market only.
+
+This is the site where patients usually search for studies. They read through lengthy eligibility criteria and then find locations near them:
+UK based site: https://bepartofresearch.nihr.ac.uk/results/a-z-conditions
+
+I also found a website that provides clinical trial data for both the US and the UK, along with an API. I am using this API to build the knowledge base:
+US and UK based site: https://clinicaltrials.gov/
+
+FINAL GOAL AND OUTCOME:
+
+Patients will search for a clinical trial, and my system will provide the most relevant trials and suggest the location closest to them.
+
+Doctors may search for studies to recommend them to their patients or to quickly review trial outcomes. Using this system, they will be able to get results in seconds.
+
+
+now I need to decide which endpoint and api keys I need to use so that I save them into the database, I have this site, please go througtn the side and check which api endpoitn I should take, if You see the fields inside each of of the endpoint then we can decide which one to take. If you can't see the field, do let me know
+Act as the lead or the project manager
+
+https://clinicaltrials.gov/data-api/api

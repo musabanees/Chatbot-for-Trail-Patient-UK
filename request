@@ -1,0 +1,36 @@
+
+Hello brother,
+
+I hope you are doing well and that everything is fine on your end. I also hope you had a wonderful New Year and Christmas.
+
+Brother, I have learned MLOps and have developed one project. I decided to move further and I could practice MLOPS more on NLP projects. I have now moved on to RAG and took a course from Towards AI. I took the course to the extend where I get the enough confidence to build the prokect.
+
+I am currently creating a new project, and I recently came up with a good idea for a RAG-based system where I will try to use most of the major techniques used in RAG.
+
+I want to develop this project end to end, and I plan to properly deploy it on the cloud later on as well once that is done, I believe I will have enough confidence to apply for jobs then.
+
+I am currently working on the RAG architecture. I would really appreciate it if you could validate the architecture, point out any loopholes, and let me know if I have made any mistakes so I can improve it before starting the coding phase.
+
+This is extremely important to me, and I would be extremely thankful to you, because no one is helping me here and I can't confirm whether I'm doing in right way or not. I won't take your much time, you can act as a LEAD or manager for the feedback and I will do myself everythingg. Again I would really really appreciate that.
+
+IDEA:
+
+US and UK health centers run clinical trials where they invite patients to take part so researchers can test new medicines and evaluate how patients respond and whether the medicines actually work.
+
+For now, I am targeting only the UK market only.
+
+This is the site where patients usually search for studies. They read through lengthy eligibility criteria and then find locations near them:
+UK based site: https://bepartofresearch.nihr.ac.uk/results/a-z-conditions
+
+I also found a website that provides clinical trial data for both the US and the UK, along with an API. I am using this API to build the knowledge base:
+US and UK based site: https://clinicaltrials.gov/
+
+FINAL GOAL AND OUTCOME:
+
+Patients will search for a clinical trial, and my system will provide the most relevant trials and suggest the location closest to them.
+
+Doctors may search for studies to recommend them to their patients or to quickly review trial outcomes. Using this system, they will be able to get results in seconds.
+
+---
+
+What do you think about this idea? I believe that if I show this project to UK recruiters, it will be beneficial for me.

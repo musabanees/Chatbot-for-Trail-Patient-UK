@@ -1,0 +1,143 @@
+{
+  "protocolSection": {
+    "identificationModule": {
+      "nctId": "NCT06649019",
+      "organization": {
+        "fullName": "Johnson & Johnson Vision Care, Inc."
+      },
+      "officialTitle": "Evaluation of Lens Rotation in Habitual Wearers of Toric, Soft Contact Lenses"
+    },
+    "statusModule": {
+      "overallStatus": "COMPLETED",
+      "startDateStruct": {
+        "date": "2024-12-06",
+        "type": "ACTUAL"
+      },
+      "primaryCompletionDateStruct": {
+        "date": "2024-12-16",
+        "type": "ACTUAL"
+      }
+    },
+    "descriptionModule": {
+      "detailedDescription": "This will be a single site, 2-visit, randomized, controlled, single-masked, non-dispensing, bilateral wear, 2x2 cross over study to assess visual acuity."
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Visual Acuity"
+      ]
+    },
+    "designModule": {
+      "studyType": "INTERVENTIONAL",
+      "enrollmentInfo": {
+        "count": 6,
+        "type": "ACTUAL"
+      }
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "description": "Distance visual acuity was measured monocularly at 6 meters after lens fitting under high-luminance high contrast (HLHC) lighting conditions using the Eurolens computerized logMAR VA chart. Lower scores indicate better visual acuity. A value of 0.0 logMAR is equivalent to 20/20 vision on a Snellen visual acuity chart."
+        }
+      ]
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\nPotential subjects must satisfy all of the following criteria to be enrolled in the study:\n\n1. Read, understand, and sign the STATEMENT OF INFORMED CONSENT and receive a fully executed copy of the form.\n2. Appear able and willing to adhere to the instructions set forth in this clinical protocol.\n3. Be between 18 and 39 years of age (inclusive) at the time of screening.\n4. Habitually wear soft, toric contact lenses in both eyes in a daily or daily disposable wear modality (i.e. not extended wear modality). Habitual wearer is defined as a minimum of 6 hours per day, for a minimum of 2 days per week during the past 30 days.\n5. Possess a wearable pair of spectacles that provide correction for distance vision (if applicable).\n6. Have the spherical component of their vertex-corrected distance refraction within the range +4.00 to -6.00 DS (inclusive) in both eyes.\n7. Have the magnitude of the cylindrical component of their vertex-corrected distance refraction between 0.75 DC and 2.50 DC in both eyes.\n8. Have best corrected monocular distance visual acuity of 0.2 or better in each eye.\n\nExclusion Criteria:\n\nPotential subjects who meet any of the following criteria will be excluded from participating in the study:\n\n1. Be currently pregnant or lactating.\n2. Be diabetic.\n3. Be currently using any ocular medications or have any ocular infection of any type.\n4. By self-report, have any ocular or systemic disease, allergies, infection, or use of medication that might contraindicate or interfere with contact lens wear, or otherwise compromise study endpoints, including infectious disease (e.g., hepatitis, tuberculosis), contagious immunosuppressive disease (e.g., Human Immunodeficiency Virus \\[HIV\\]), autoimmune disease (e.g. rheumatoid arthritis, Sjögren's syndrome), or history of serious mental illness or seizures. See section 9.1 for additional details regarding excluded systemic medications.\n5. Have habitually worn rigid gas permeable (RGP) lenses, orthokeratology lenses, or hybrid lenses (e.g. SynergEyes, SoftPerm) within the past 6 months.\n6. Be currently wearing monovision or multifocal contact lenses.\n7. Be currently wearing lenses in an extended wear modality.\n8. Be currently wearing or have had worn Acuvue® Oasys 1-Day for Astigmatism, or Dailies® Total1 for Astigmatism lenses during the last 3 months.\n9. Have a history of strabismus or amblyopia.\n10. Be an employee (e.g., Investigator, Coordinator, Technician) or immediate family member of an employee (including partner, child, parent, grandparent, grandchild or sibling of the employee or their spouse) of the clinical site.\n11. Have participated in a contact lens or lens care product clinical trial within 7 days prior to study enrollment.\n12. Have clinically significant (grade 3 or higher on the Efron grading scale) slit lamp findings (e.g., corneal edema, neovascularization or staining, tarsal abnormalities or bulbar injection) or other corneal or ocular disease or abnormalities that contraindicate contact lens wear or may otherwise compromise study endpoints (including entropion, ectropion, chalazia, recurrent styes, glaucoma, history of recurrent corneal erosions, aphakia, moderate or above corneal distortion, herpetic keratitis).\n13. Have fluctuations in vision due to clinically significant dry eye or other ocular conditions.\n14. Have had or have planned (within the study period) any ocular or intraocular surgery (e.g., radial keratotomy, PRK, LASIK, iridotomy, retinal laser photocoagulation, etc.).",
+      "sex": "ALL",
+      "minimumAge": "18 Years",
+      "maximumAge": "39 Years"
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "facility": "The University of Manchester, Department of Optometry & Neuroscience",
+          "city": "Manchester",
+          "zip": "M139PL",
+          "country": "United Kingdom",
+          "geoPoint": {
+            "lat": 53.48095,
+            "lon": -2.23743
+          }
+        }
+      ]
+    }
+  },
+  "resultsSection": {
+    "participantFlowModule": {
+      "recruitmentDetails": "A total of 6 subjects were enrolled at a single clinical site. Of those enrolled, 1 subject failed to meet all eligibility criteria and 5 subjects were dispensed both study lenses and completed the study."
+    },
+    "outcomeMeasuresModule": {
+      "outcomeMeasures": [
+        {
+          "type": "PRIMARY",
+          "description": "Distance visual acuity was measured monocularly at 6 meters after lens fitting under high-luminance high contrast (HLHC) lighting conditions using the Eurolens computerized logMAR VA chart. Lower scores indicate better visual acuity. A value of 0.0 logMAR is equivalent to 20/20 vision on a Snellen visual acuity chart.",
+          "paramType": "MEAN",
+          "dispersionType": "Standard Deviation",
+          "unitOfMeasure": "logMAR",
+          "timeFrame": "Approximately 15-minutes Post Lens Insertion",
+          "typeUnitsAnalyzed": "Eyes",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Senofilcon A",
+              "description": "Subjects that wore the senofilcon A lens in either the first or second period."
+            },
+            {
+              "id": "OG001",
+              "title": "Delefilcon A",
+              "description": "Subjects that wore the delefilcon A lens in either the first or second period."
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "-0.07",
+                      "spread": "0.084"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "-0.07",
+                      "spread": "0.050"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "adverseEventsModule": {
+      "timeFrame": "Throughout the duration of the study; approximately 1-10 days per subject.",
+      "description": "All subjects fitted at least 1 study lens.",
+      "eventGroups": [
+        {
+          "id": "EG000",
+          "title": "Senofilcon A",
+          "description": "Subjects that wore the senofilcon A lens in either the first or second period.",
+          "deathsNumAffected": 0,
+          "deathsNumAtRisk": 5,
+          "seriousNumAffected": 0,
+          "seriousNumAtRisk": 5,
+          "otherNumAffected": 0,
+          "otherNumAtRisk": 5
+        },
+        {
+          "id": "EG001",
+          "title": "Delefilcon A",
+          "description": "Subjects that wore the delefilcon A lens in either the first or second period.",
+          "deathsNumAffected": 0,
+          "deathsNumAtRisk": 5,
+          "seriousNumAffected": 0,
+          "seriousNumAtRisk": 5,
+          "otherNumAffected": 0,
+          "otherNumAtRisk": 5
+        }
+      ]
+    }
+  },
+  "hasResults": true
+}
